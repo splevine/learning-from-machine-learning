@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Learning from Machine Learning!"
-date:   2023-01-29 16:26:41 -0500
+date:   2023-01-07 16:26:41 -0500
 categories: machine learning update
 ---
 
