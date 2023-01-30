@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning from Machine Learning | Episode 1 | Maarten Grootendorst"
-date:   2023-01-29 16:26:41 -0500
+date:   2023-01-09 16:26:41 -0500
 categories: machine learning updates
 youtubeID: bLW_RH2Y6oI
 ---
