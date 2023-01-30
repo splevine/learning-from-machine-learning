@@ -23,7 +23,7 @@ email: levine.seth.p (at) gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A machine learning podcast that explores more than just algorithms and data: Life lessons from the experts.
 baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blog
-url: "https://splevine.github.io/learning-from-machine-learning" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://splevine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nlp_nerd
 linkedin_username: sethplevine
 

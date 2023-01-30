@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Learning from Machine Learning!"
 date:   2023-01-29 16:26:41 -0500
-categories: jekyll update
+categories: machine learning update
 ---
 
 Welcome to "Learning from Machine Learning," a podcast about the insights gained from a career in the field of Machine Learning and Data Science.
