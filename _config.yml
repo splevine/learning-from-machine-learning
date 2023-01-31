@@ -30,7 +30,8 @@ linkedin_username: sethplevine
 
 # Build settings
 theme: minima
-# plugins:
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
