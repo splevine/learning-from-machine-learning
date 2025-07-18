@@ -5,7 +5,7 @@ permalink: /episodes/
 description: Browse all episodes of Learning from Machine Learning podcast featuring industry experts sharing their insights on ML, data science, and career advice.
 ---
 
-{% assign episode_posts = site.posts | where_exp: "post", "post.title contains 'Episode' or post.title contains 'learning-from-machine-learning'" %}
+{% assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" %}
 {% assign episode_count = episode_posts | size %}
 
 ## Browse All {{ episode_count }} Episodes
