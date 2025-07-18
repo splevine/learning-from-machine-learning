@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Episode automation config (contains API keys)
+scripts/config.py
