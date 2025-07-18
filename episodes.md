@@ -5,12 +5,14 @@ permalink: /episodes/
 description: Browse all episodes of Learning from Machine Learning podcast featuring industry experts sharing their insights on ML, data science, and career advice.
 ---
 
-## Browse All {{ site.posts.size }} Episodes
+{% assign episode_posts = site.posts | where_exp: "post", "post.title contains 'Episode' or post.title contains 'learning-from-machine-learning'" %}
+{% assign episode_count = episode_posts | size %}
+
+## Browse All {{ episode_count }} Episodes
 
 Explore conversations with industry experts and practitioners sharing their experiences, insights, and advice on succeeding in Machine Learning and Data Science.
 
 <div class="episodes-grid">
-{% assign episode_posts = site.posts | where: "categories", "machine learning updates" %}
 {% for post in episode_posts %}
   <article class="episode-card" style="border: 1px solid #e1e4e8; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; background: #f8f9fa;">
     

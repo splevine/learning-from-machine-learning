@@ -21,7 +21,7 @@
 title: Learning from Machine Learning
 author:
   name: Seth Levine
-  email: levine.seth.p (at)gmail.com
+  email: levine.seth.p (at) gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A machine learning podcast that explores more than just algorithms and data: Life lessons from the experts.
 baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blog
@@ -52,6 +52,12 @@ minima:
 theme: minima
 plugins:
   - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - AUTOMATION_SETUP.md
+  - scripts/
+  - .github/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
