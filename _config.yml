@@ -25,13 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   A machine learning podcast that explores more than just algorithms and data: Life lessons from the experts.
 baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blog
 url: "https://splevine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: nlp_nerd
+linkedin_username: sethplevine
+youtube_username: UCGwSWuvSRzop4ZVG2z9NmnQ
+rss: rss
 minima:
-  social_links:
-    - { platform: twitter, user_url: "https://twitter.com/nlp_nerd" }
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/sethplevine" }
-    - { platform: youtube, user_url: "https://www.youtube.com/channel/UCGwSWuvSRzop4ZVG2z9NmnQ" }
-    - { platform: rss, user_url: "https://media.rss.com/learning-from-machine-learning/feed.xml", title: "Podcast RSS Feed" }
-    - { platform: substack, user_url: "https://mindfulmachines.substack.com", title: "Substack Newsletter" }
   show_excerpts: true
   date_format: "%B %-d, %Y"
   skin: auto
