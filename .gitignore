@@ -6,3 +6,5 @@ vendor
 
 # Episode automation config (contains API keys)
 scripts/config.py
+# Cursor IDE rules (local development only)
+.cursorrules

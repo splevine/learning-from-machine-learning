@@ -19,13 +19,33 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Learning from Machine Learning
-email: levine.seth.p (at) gmail.com
+author:
+  name: Seth Levine
+  email: levine.seth.p (at)gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A machine learning podcast that explores more than just algorithms and data: Life lessons from the experts.
 baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blog
 url: "https://splevine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: nlp_nerd
-linkedin_username: sethplevine
+minima:
+  social_links:
+    - title: Subscribe on YouTube
+      icon: youtube
+      url: "https://www.youtube.com/channel/UCGwSWuvSRzop4ZVG2z9NmnQ?sub_confirmation=1"
+    - title: Follow on Twitter
+      icon: twitter
+      url: "https://twitter.com/nlp_nerd"
+    - title: Connect on LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/sethplevine"
+    - title: Listen on RSS.com
+      icon: rss
+      url: "https://rss.com/podcasts/learning-from-machine-learning/"
+  show_excerpts: true
+  date_format: "%B %-d, %Y"
+  skin: auto
+  nav_pages:
+    - about.markdown
+    - episodes.md
 
 
 # Build settings
