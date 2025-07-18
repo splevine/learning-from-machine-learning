@@ -11,13 +11,13 @@ description: "Industry experts share their experiences, insights and advice on s
   </p>
   
   <div class="listen-buttons" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
-    <a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230" 
-       style="display: inline-block; padding: 12px 24px; background: #007acc; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
-      🎧 Listen on Apple Podcasts
-    </a>
     <a href="https://www.youtube.com/channel/UCGwSWuvSRzop4ZVG2z9NmnQ?sub_confirmation=1" 
        style="display: inline-block; padding: 12px 24px; background: #ff0000; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
       📺 Subscribe on YouTube
+    </a>
+    <a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230" 
+       style="display: inline-block; padding: 12px 24px; background: #007acc; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+      🎧 Listen on Apple Podcasts
     </a>
     <a href="https://rss.com/podcasts/learning-from-machine-learning/" 
        style="display: inline-block; padding: 12px 24px; background: #ff6b35; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
