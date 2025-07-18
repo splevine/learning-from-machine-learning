@@ -28,18 +28,10 @@ baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blo
 url: "https://splevine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 minima:
   social_links:
-    - title: Subscribe on YouTube
-      icon: youtube
-      url: "https://www.youtube.com/channel/UCGwSWuvSRzop4ZVG2z9NmnQ?sub_confirmation=1"
-    - title: Follow on Twitter
-      icon: twitter
-      url: "https://twitter.com/nlp_nerd"
-    - title: Connect on LinkedIn
-      icon: linkedin
-      url: "https://www.linkedin.com/in/sethplevine"
-    - title: Listen on RSS.com
-      icon: rss
-      url: "https://rss.com/podcasts/learning-from-machine-learning/"
+    twitter: nlp_nerd
+    linkedin: sethplevine
+    youtube: UCGwSWuvSRzop4ZVG2z9NmnQ
+    rss: "https://media.rss.com/learning-from-machine-learning/feed.xml"
   show_excerpts: true
   date_format: "%B %-d, %Y"
   skin: auto
