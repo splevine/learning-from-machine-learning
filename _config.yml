@@ -27,8 +27,10 @@ baseurl: "/learning-from-machine-learning" # the subpath of your site, e.g. /blo
 url: "https://splevine.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nlp_nerd
 linkedin_username: sethplevine
-youtube_username: UCGwSWuvSRzop4ZVG2z9NmnQ
-rss: rss
+youtube_username: learningfrommachinelearning
+rss: "https://rss.com/podcasts/learning-from-machine-learning/"
+substack_username: mindfulmachines
+
 minima:
   show_excerpts: true
   date_format: "%B %-d, %Y"
