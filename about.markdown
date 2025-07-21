@@ -15,7 +15,7 @@ Whether you are a student just starting out, a researcher looking to make the ju
 I hope you will join me on this journey of continuous learning and professional development.
 
 <div style="text-align: center; margin-top: 2rem;">
-  <img src="{{ '/assets/images/Learning from Machine Learning logo.png' | relative_url }}" 
+  <img src="{{ '/assets/gifs/Moving-Logo.gif' | relative_url }}" 
        alt="Learning from Machine Learning Logo" 
        style="max-width: 300px; height: auto; border-radius: 8px;" />
 </div>

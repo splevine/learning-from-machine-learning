@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     {%- assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" -%}
     
-    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">All Episodes</h2>
+    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">Episodes</h2>
     
     <div style="display: grid; gap: 1rem; margin-bottom: 2rem;">
       {%- for post in episode_posts -%}
@@ -31,16 +31,16 @@ layout: default
         </div>
         
         {%- if post.youtubeID -%}
-        <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
-          <a href="https://www.youtube.com/watch?v={{ post.youtubeID }}" target="_blank" 
-             style="font-size: 0.8rem; color: #ff0000; text-decoration: none;">
-            ▶️ Watch on YouTube
-          </a>
-          <a href="{{ post.url | relative_url }}" 
-             style="font-size: 0.8rem; color: #0366d6; text-decoration: none;">
-            📝 Read More
-          </a>
-        </div>
+                 <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem;">
+           <a href="https://www.youtube.com/watch?v={{ post.youtubeID }}" target="_blank" 
+              style="font-size: 0.8rem; color: #ff0000; text-decoration: none;">
+             ▶️ YouTube
+           </a>
+           <a href="{{ post.url | relative_url }}" 
+              style="font-size: 0.8rem; color: #0366d6; text-decoration: none;">
+             📝 Read More
+           </a>
+         </div>
         {%- endif -%}
       </div>
       {%- endfor -%}
