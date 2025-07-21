@@ -5,12 +5,22 @@ layout: post
 title: 'Ines Montani: Explosion, NLP, Generative AI, Entrepreneurship | Learning from
   Machine Learning #7'
 youtubeID: XNFqFT-DZwo
+substack_url: https://mindfulmachines.substack.com/p/ines-montani-explosion-nlp-generative
 ---
-Watch on [YouTube](https://www.youtube.com/watch?v=XNFqFT-DZwo):
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XNFqFT-DZwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>This episode features co-founder and CEO of Explosion, Ines Montani. Listen in as we discuss the evolution of the web and machine learning, the development of SpaCy, Natural Language Processing vs. Natural Language Understanding, the misconceptions of starting a software company, and so much more! Ines is a software developer working on Artificial Intelligence and Natural Language Processing technologies.</p><p>She's the co-founder and CEO of Explosion, the company behind SpaCy, one of the leading open-source libraries for NLP in Python and Prodigy, an annotation tool to help create training data for Machine Learning Models. Ines has an academic background in Communication Science, Media Studies and Linguistics and has been coding and designing websites since she was 11. She's been the keynote speaker at Python and Data Science conferences around the world.</p><p>Learning from Machine Learning, a podcast that explores more than just algorithms and data: Life lessons from the experts.</p><p><a href="https://youtu.be/XNFqFT-DZwo?si=Aj75TmsCyBQTyWqq">Listen on YouTube: https://youtu.be/XNFqFT-DZwo?si=Aj75TmsCyBQTyWqq</a></p><p>Listen on your favorite podcast platform:</p><p><a href="https://rss.com/podcasts/learning-from-machine-learning/1190862/">https://rss.com/podcasts/learning-from-machine-learning/1190862/</a></p><p></p><p>References in the Episode</p><ul><li><a href="https://explosion.ai/">https://explosion.ai/</a></li><li><a href="https://spacy.io/">https://spacy.io/</a></li><li><a href="https://ines.io/">https://ines.io/</a></li><li><a href="https://explosion.ai/blog/applied-nlp-thinking">Applied NLP Thinking</a></li><li><a href="https://www.youtube.com/watch?v=74AsJ7RET20&amp;t=0s&amp;ab_channel=EuroPythonConference">Ines Montani - How to Ignore Most Startup Advice and Build a Decent Software Business</a> <a href="https://www.youtube.com/watch?v=Bd2ciwinFUE&amp;t=0s&amp;ab_channel=PyData">Ines Montani: Incorporating LLMs into practical NLP workflows</a></li><li><a href="https://youtu.be/UbPuen-rlDk?si=5baS3-Yq-jaA81wW">Ines Montani (spaCy) - Large Language Models from Prototype to Production [PyData Südwest] Confection</a></li><li><a href="https://github.com/explosion/confection">https://github.com/explosion/confection</a></li></ul><p></p><p>Resources to learn more about Learning from Machine Learning</p><ul><li><a href="https://www.linkedin.com/company/learning-from-machine-learning">https://www.linkedin.com/company/learning-from-machine-learning</a></li><li><a href="https://mindfulmachines.substack.com/">https://mindfulmachines.substack.com/</a></li><li><a href="https://www.linkedin.com/in/sethplevine/">https://www.linkedin.com/in/sethplevine/</a></li><li><a href="https://medium.com/@levine.seth.p">https://medium.com/@levine.seth.p</a></li></ul>
+This episode features co-founder and CEO of Explosion, Ines Montani. Listen in as we discuss the evolution of the web and machine learning, the development of SpaCy, Natural Language Processing vs. Natural Language Understanding, the misconceptions of starting a software company, and so much more!
 
-<a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1673288700" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+Ines is a software developer working on Artificial Intelligence and Natural Language Processing technologies. She's the co-founder and CEO of Explosion, the company behind SpaCy, one of the leading open-source libraries for NLP in Python and Prodigy, an annotation tool to help create training data for Machine Learning Models.
 
-Read more on [Substack](https://mindfulmachines.substack.com/p/ines-montani-explosion-nlp-generative)
+Ines has an academic background in Communication Science, Media Studies and Linguistics and has been coding and designing websites since she was 11. She's been the keynote speaker at Python and Data Science conferences around the world.
+
+## References and Resources
+
+- [Explosion AI](https://explosion.ai/)
+- [SpaCy](https://spacy.io/)
+- [Ines Montani's Website](https://ines.io/)
+- [Applied NLP Thinking](https://explosion.ai/blog/applied-nlp-thinking)
+- [Ines Montani - How to Ignore Most Startup Advice and Build a Decent Software Business](https://www.youtube.com/watch?v=74AsJ7RET20)
+- [Ines Montani: Incorporating LLMs into practical NLP workflows](https://www.youtube.com/watch?v=Bd2ciwinFUE)
+- [Ines Montani (spaCy) - Large Language Models from Prototype to Production](https://youtu.be/UbPuen-rlDk?si=5baS3-Yq-jaA81wW)
+- [Confection](https://github.com/explosion/confection)

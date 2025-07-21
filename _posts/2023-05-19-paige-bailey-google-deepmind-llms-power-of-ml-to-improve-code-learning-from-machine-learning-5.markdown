@@ -5,12 +5,29 @@ layout: post
 title: 'Paige Bailey: Google Deepmind, LLMs, Power of ML to improve code | Learning
   from Machine Learning #5'
 youtubeID: BNz2yFVppts
+substack_url: https://mindfulmachines.substack.com/p/paige-bailey-google-deepmind-llms-65c
 ---
-Watch on [YouTube](https://www.youtube.com/watch?v=BNz2yFVppts):
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BNz2yFVppts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>The episode features Paige Bailey, the lead product manager for generative models at Google DeepMind. Paige's work has helped transform the way that people work and design software using the power of machine learning. Her current work is pushing the boundaries of innovation with Bard and the soon to be released Gemini. </p><p>Learning from Machine Learning, a podcast that explores more than just algorithms and data: Life lessons from the experts. </p><ul><li><p>Resources to learn more about Paige Bailey</p><ul><li><p><a href="https://twitter.com/DynamicWebPaige">https://twitter.com/DynamicWebPaige</a></p></li><li><p><a href="https://github.com/dynamicwebpaige">https://github.com/dynamicwebpaige</a> </p></li></ul></li><li><p>References from the Episode </p><ul><li><p>Diamond Age - Neal Stephenson - <a href="https://amzn.to/3BCwk4n">https://amzn.to/3BCwk4n</a> </p></li><li><p>Google Deepmind - <a href="https://www.deepmind.com/">https://www.deepmind.com/</a> </p></li><li><p>Google Research - <a href="https://research.google/">https://research.google/</a> </p></li><li><p>Jax - <a href="https://jax.readthedocs.io/en/latest/">https://jax.readthedocs.io/en/latest/</a> </p></li><li><p>Jeff Dean - <a href="https://research.google/people/jeff/">https://research.google/people/jeff/</a> </p></li><li><p>Oriol Vinyals - <a href="https://research.google/people/OriolVinyals/">https://research.google/people/OriolVinyals/</a> </p></li><li><p>Roy Frostig - <a href="https://cs.stanford.edu/~rfrostig/">https://cs.stanford.edu/~rfrostig/</a> </p></li><li><p>Matt Johnson - <a href="https://www.linkedin.com/in/matthewjamesjohnson/">https://www.linkedin.com/in/matthewjamesjohnson/</a> </p></li><li><p>Peter Hawkins - <a href="https://github.com/hawkinsp">https://github.com/hawkinsp</a> </p></li><li><p>Skye Wanderman-Milne - <a href="https://www.linkedin.com/in/skye-wanderman-milne-73887b29/">https://www.linkedin.com/in/skye-wanderman-milne-73887b29/</a> </p></li><li><p>Yash Katariya - <a href="https://www.linkedin.com/in/yashkatariya/">https://www.linkedin.com/in/yashkatariya/</a> </p></li><li><p>Andrej Karpathy - <a href="https://karpathy.ai/">https://karpathy.ai/</a> </p></li></ul></li><li><p>Resources to learn more about Learning from Machine Learning</p><ul><li><p><a href="https://www.linkedin.com/company/learning-from-machine-learning">https://www.linkedin.com/company/learning-from-machine-learning</a></p></li><li><p><a href="https://www.linkedin.com/in/sethplevine/">https://www.linkedin.com/in/sethplevine/</a></p></li><li><p><a href="https://medium.com/@levine.seth.p">https://medium.com/@levine.seth.p</a></p></li></ul></li></ul>
+The episode features Paige Bailey, the lead product manager for generative models at Google DeepMind. Paige's work has helped transform the way that people work and design software using the power of machine learning. Her current work is pushing the boundaries of innovation with Bard and the soon to be released Gemini.
 
-<a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1673288700" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+Learning from Machine Learning explores more than just algorithms and data: Life lessons from the experts.
 
-Read more on [Substack](https://mindfulmachines.substack.com/p/paige-bailey-google-deepmind-llms-65c)
+## Connect with Paige Bailey
+
+- [Twitter](https://twitter.com/DynamicWebPaige)
+- [GitHub](https://github.com/dynamicwebpaige)
+
+## References from the Episode
+
+- [Diamond Age - Neal Stephenson](https://amzn.to/3BCwk4n)
+- [Google DeepMind](https://www.deepmind.com/)
+- [Google Research](https://research.google/)
+- [JAX](https://jax.readthedocs.io/en/latest/)
+- [Jeff Dean](https://research.google/people/jeff/)
+- [Oriol Vinyals](https://research.google/people/OriolVinyals/)
+- [Roy Frostig](https://cs.stanford.edu/~rfrostig/)
+- [Matt Johnson](https://www.linkedin.com/in/matthewjamesjohnson/)
+- [Peter Hawkins](https://github.com/hawkinsp)
+- [Skye Wanderman-Milne](https://www.linkedin.com/in/skye-wanderman-milne-73887b29/)
+- [Yash Katariya](https://www.linkedin.com/in/yashkatariya/)
+- [Andrej Karpathy](https://karpathy.ai/)

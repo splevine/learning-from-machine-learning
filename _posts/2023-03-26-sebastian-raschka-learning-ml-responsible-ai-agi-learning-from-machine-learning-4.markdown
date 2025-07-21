@@ -5,12 +5,54 @@ layout: post
 title: 'Sebastian Raschka: Learning ML, Responsible AI, AGI  | Learning from Machine
   Learning #4'
 youtubeID: gOEey-pbM90
+substack_url: https://mindfulmachines.substack.com/p/sebastian-raschka-learning-ml-responsible-b74
 ---
-Watch on [YouTube](https://www.youtube.com/watch?v=gOEey-pbM90):
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gOEey-pbM90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<p>This episode we welcome Sebastian Raschka, Lead AI Educator at Lightning and author of Machine Learning with Pytorch and Scikit-Learn to discuss the best ways to learn machine learning, his open source work, how to use chatGPT, AGI, responsible AI and so much more. Sebastian is a fountain of knowledge and it was a pleasure to get his insights on this fast moving industry. Learning from Machine Learning, a podcast that explores more than just algorithms and data: Life lessons from the experts. Resources to learn more about Sebastian Raschka and his work:</p><p><a href="https://sebastianraschka.com/">https://sebastianraschka.com/</a></p><p><a href="https://lightning.ai/">https://lightning.ai/</a></p><p><a href="https://amzn.to/3z9H88Y">Machine Learning with Pytorch and Scikit-Learn</a></p><p><a href="https://leanpub.com/machine-learning-q-and-ai/">Machine Learning Q and AI</a></p><p>Resources to learn more about Learning from Machine Learning and the host: <a href="https://www.linkedin.com/company/learning-from-machine-learning">https://www.linkedin.com/company/learning-from-machine-learning</a></p><p><a href="https://www.linkedin.com/in/sethplevine/">https://www.linkedin.com/in/sethplevine/</a></p><p><a href="https://medium.com/@levine.seth.p">https://medium.com/@levine.seth.p</a></p><p><a href="https://twitter.com/NLP_nerd">twitter</a></p><p>References from Episode</p><p><a href="https://scikit-learn.org/stable/">https://scikit-learn.org/stable/</a></p><p><a href="http://rasbt.github.io/mlxtend/">http://rasbt.github.io/mlxtend/</a></p><p><a href="https://github.com/BioPandas/biopandas">https://github.com/BioPandas/biopandas</a></p><p><a href="https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html">Understanding and Coding the Self-Attention Mechanism of Large Language Models From Scratch</a></p><p>Andrew Ng - <a href="https://www.andrewng.org/">https://www.andrewng.org/</a></p><p>Andrej Karpathy - <a href="https://karpathy.ai/">https://karpathy.ai/</a></p><p>Paige Bailey - <a href="https://github.com/dynamicwebpaige">https://github.com/dynamicwebpaige</a></p><p></p><p>Contents</p><p>01:15 - Career Background</p><p>05:18 - Industry vs. Academia</p><p>08:18 - First Project in ML</p><p>15:04 - Open Source Projects Involvement</p><p>20:00 - Machine Learning: Q&amp;AI</p><p>24:18 - ChatGPT as Brainstorm Assistant</p><p>25:38 - Hype vs. Reality</p><p>27:55 - AGI</p><p>31:00 - Use Cases for Generative Models</p><p>34:01 - Should the goal to be to replicate human intelligence?</p><p>39:18 - Delegating Tasks using LLM</p><p>42:26 - ML Models are overconfident on Out of Distribution</p><p>44:54 - Responsible AI and ML</p><p>45:59 - Complexity of ML Systems</p><p>47:26 - Trend for ML Practitioners to move to AI Ethics</p><p>49:27 - What advice would you give to someone just starting out?</p><p>52:20 - Advice that you’ve received that has helped you</p><p>54:08 - Andrew Ng Advice</p><p>55:20 - Exercise of Implementing Algorithms from Scratch</p><p>59:00 - Who else has influenced you?</p><p>01:01:18 - Production and Real-World Applications - Don’t reinvent the wheel</p><p>01:03:00 - What has a career in ML taught you about life?</p>
+This episode we welcome Sebastian Raschka, Lead AI Educator at Lightning and author of Machine Learning with PyTorch and Scikit-Learn to discuss the best ways to learn machine learning, his open source work, how to use ChatGPT, AGI, responsible AI and so much more.
 
-<a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1673288700" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+Sebastian is a fountain of knowledge and it was a pleasure to get his insights on this fast moving industry. Learning from Machine Learning explores more than just algorithms and data: Life lessons from the experts.
 
-Read more on [Substack](https://mindfulmachines.substack.com/p/sebastian-raschka-learning-ml-responsible-b74)
+## Connect with Sebastian Raschka
+
+- [Sebastian Raschka's Website](https://sebastianraschka.com/)
+- [Lightning AI](https://lightning.ai/)
+
+## Sebastian's Books
+
+- [Machine Learning with PyTorch and Scikit-Learn](https://amzn.to/3z9H88Y)
+- [Machine Learning Q and AI](https://leanpub.com/machine-learning-q-and-ai/)
+
+## References from the Episode
+
+- [Scikit-Learn](https://scikit-learn.org/stable/)
+- [MLxtend](http://rasbt.github.io/mlxtend/)
+- [BioPandas](https://github.com/BioPandas/biopandas)
+- [Understanding and Coding the Self-Attention Mechanism of Large Language Models From Scratch](https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html)
+- [Andrew Ng](https://www.andrewng.org/)
+- [Andrej Karpathy](https://karpathy.ai/)
+- [Paige Bailey](https://github.com/dynamicwebpaige)
+
+## Episode Timestamps
+
+- 01:15 - Career Background
+- 05:18 - Industry vs. Academia
+- 08:18 - First Project in ML
+- 15:04 - Open Source Projects Involvement
+- 20:00 - Machine Learning: Q&AI
+- 24:18 - ChatGPT as Brainstorm Assistant
+- 25:38 - Hype vs. Reality
+- 27:55 - AGI
+- 31:00 - Use Cases for Generative Models
+- 34:01 - Should the goal be to replicate human intelligence?
+- 39:18 - Delegating Tasks using LLM
+- 42:26 - ML Models are overconfident on Out of Distribution
+- 44:54 - Responsible AI and ML
+- 45:59 - Complexity of ML Systems
+- 47:26 - Trend for ML Practitioners to move to AI Ethics
+- 49:27 - What advice would you give to someone just starting out?
+- 52:20 - Advice that you've received that has helped you
+- 54:08 - Andrew Ng Advice
+- 55:20 - Exercise of Implementing Algorithms from Scratch
+- 59:00 - Who else has influenced you?
+- 01:01:18 - Production and Real-World Applications - Don't reinvent the wheel
+- 01:03:00 - What has a career in ML taught you about life?
