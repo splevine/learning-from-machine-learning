@@ -76,23 +76,22 @@ layout: default
 
   {%- comment -%} Episode Navigation {%- endcomment -%}
   {%- assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" -%}
-  {%- assign current_index = episode_posts | map: 'url' | where_exp: 'url', 'url == page.url' | size -%}
-  {%- if current_index > 0 -%}
-    {%- assign current_position = episode_posts | map: 'url' | find_exp: 'url', 'url == page.url' -%}
-    {%- for post in episode_posts -%}
-      {%- if post.url == page.url -%}
-        {%- assign current_index = forloop.index0 -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-    
-    {%- assign prev_post = episode_posts[current_index] | plus: 1 -%}
-    {%- assign next_post = episode_posts[current_index] | minus: 1 -%}
-    
+  
+  {%- comment -%} Find current post index {%- endcomment -%}
+  {%- assign current_index = -1 -%}
+  {%- for post in episode_posts -%}
+    {%- if post.url == page.url -%}
+      {%- assign current_index = forloop.index0 -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  
+  {%- if current_index >= 0 -%}
     <div style="display: flex; justify-content: space-between; align-items: center; margin: 3rem 0; padding: 1rem 0; border-top: 1px solid #e1e4e8;">
       <div style="flex: 1;">
-        {%- if current_index < episode_posts.size | minus: 1 -%}
-          {%- assign prev_post = episode_posts[current_index | plus: 1] -%}
+        {%- assign prev_index = current_index | plus: 1 -%}
+        {%- if prev_index < episode_posts.size -%}
+          {%- assign prev_post = episode_posts[prev_index] -%}
           <a href="{{ prev_post.url | relative_url }}" style="text-decoration: none; color: #0366d6;">
             <div style="text-align: left;">
               <div style="font-size: 0.8rem; color: #586069; margin-bottom: 0.25rem;">← Previous Episode</div>
@@ -110,8 +109,9 @@ layout: default
       </div>
       
       <div style="flex: 1;">
-        {%- if current_index > 0 -%}
-          {%- assign next_post = episode_posts[current_index | minus: 1] -%}
+        {%- assign next_index = current_index | minus: 1 -%}
+        {%- if next_index >= 0 -%}
+          {%- assign next_post = episode_posts[next_index] -%}
           <a href="{{ next_post.url | relative_url }}" style="text-decoration: none; color: #0366d6;">
             <div style="text-align: right;">
               <div style="font-size: 0.8rem; color: #586069; margin-bottom: 0.25rem;">Next Episode →</div>
