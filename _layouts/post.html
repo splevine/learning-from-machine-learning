@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  {%- if page.youtubeID -%}
+  <div style="text-align: center; margin: 2rem 0;">
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/{{ page.youtubeID }}" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            style="max-width: 100%; border-radius: 8px;">
+    </iframe>
+  </div>
+  {%- endif -%}
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e1e4e8;">
+
+  <div style="text-align: center; margin: 2rem 0;">
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+      <a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&itscg=30200&ls=1" 
+         style="display: inline-block; text-decoration: none;">
+        <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&releaseDate=1673288700" 
+             alt="Listen on Apple Podcasts" 
+             style="border-radius: 13px; width: 250px; height: 83px;">
+      </a>
+      
+      <a href="https://open.spotify.com/show/2w787MHWhbcJMgZ6k1e5v8" 
+         style="display: inline-block; text-decoration: none; background: #1DB954; padding: 1rem 1.5rem; border-radius: 13px; color: white; font-weight: 600; font-size: 1rem; align-items: center; min-width: 218px; height: 51px; text-align: center; line-height: 51px;">
+        🎵 Listen on Spotify
+      </a>
+    </div>
+  </div>
+
+  {%- if page.substack_url -%}
+  <div style="text-align: center; margin: 1rem 0;">
+    <a href="{{ page.substack_url }}" 
+       style="display: inline-block; padding: 0.75rem 1.5rem; background: #ff6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">
+      📝 Read more on Substack
+    </a>
+  </div>
+  {%- endif -%}
+
+  {%- comment -%} Episode Navigation {%- endcomment -%}
+  {%- assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" -%}
+  {%- assign current_index = episode_posts | map: 'url' | where_exp: 'url', 'url == page.url' | size -%}
+  {%- if current_index > 0 -%}
+    {%- assign current_position = episode_posts | map: 'url' | find_exp: 'url', 'url == page.url' -%}
+    {%- for post in episode_posts -%}
+      {%- if post.url == page.url -%}
+        {%- assign current_index = forloop.index0 -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    
+    {%- assign prev_post = episode_posts[current_index] | plus: 1 -%}
+    {%- assign next_post = episode_posts[current_index] | minus: 1 -%}
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 3rem 0; padding: 1rem 0; border-top: 1px solid #e1e4e8;">
+      <div style="flex: 1;">
+        {%- if current_index < episode_posts.size | minus: 1 -%}
+          {%- assign prev_post = episode_posts[current_index | plus: 1] -%}
+          <a href="{{ prev_post.url | relative_url }}" style="text-decoration: none; color: #0366d6;">
+            <div style="text-align: left;">
+              <div style="font-size: 0.8rem; color: #586069; margin-bottom: 0.25rem;">← Previous Episode</div>
+              <div style="font-size: 0.9rem; font-weight: 500;">{{ prev_post.title | truncate: 60 }}</div>
+            </div>
+          </a>
+        {%- endif -%}
+      </div>
+      
+      <div style="flex: 1; text-align: center;">
+        <a href="{{ '/episodes/' | relative_url }}" 
+           style="display: inline-block; padding: 0.5rem 1rem; background: #f1f3f4; color: #424242; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">
+          All Episodes
+        </a>
+      </div>
+      
+      <div style="flex: 1;">
+        {%- if current_index > 0 -%}
+          {%- assign next_post = episode_posts[current_index | minus: 1] -%}
+          <a href="{{ next_post.url | relative_url }}" style="text-decoration: none; color: #0366d6;">
+            <div style="text-align: right;">
+              <div style="font-size: 0.8rem; color: #586069; margin-bottom: 0.25rem;">Next Episode →</div>
+              <div style="font-size: 0.9rem; font-weight: 500;">{{ next_post.title | truncate: 60 }}</div>
+            </div>
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article> 
