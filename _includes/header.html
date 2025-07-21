@@ -3,7 +3,11 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">Home</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      <img src="{{ '/assets/images/Learning from Machine Learning logo.png' | relative_url }}" 
+           alt="Learning from Machine Learning" 
+           style="height: 40px; vertical-align: middle;">
+    </a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
