@@ -18,7 +18,7 @@ I hope you will join me on this journey of continuous learning and professional 
 ## 🎧 **Listen & Subscribe:**
 
 - **[🍎 Apple Podcasts](https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230)** - Subscribe and leave a review!
-- **[🎙️ RSS Feed](https://media.rss.com/learning-from-machine-learning/feed.xml)** - For your favorite podcast app
+- **[🎙️ RSS.com](https://rss.com/podcasts/learning-from-machine-learning/)** - For your favorite podcast app
 - **[📺 YouTube Channel](https://www.youtube.com/@learningfrommachinelearning)** - Watch full episodes and subscribe
 
 ## 📝 **Stay Connected:**
@@ -29,4 +29,4 @@ I hope you will join me on this journey of continuous learning and professional 
 
 ---
 
-**Ready to start learning?** Check out the [first episode with Maarten Grootendorst]({% post_url 2023-01-09-episode-one %}) about BERTopic and the psychology of data science!
+**Ready to start learning?** Check out the [first episode with Maarten Grootendorst](/learning-from-machine-learning/machine/learning/updates/2023/01/09/episode-one.html) about BERTopic and the psychology of data science!
