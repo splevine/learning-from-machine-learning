@@ -8,7 +8,7 @@ description: Browse all episodes of Learning from Machine Learning podcast featu
 {% assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" %}
 {% assign episode_count = episode_posts | size %}
 
-## Browse All {{ episode_count }} Episodes
+## Browse All Episodes
 
 Explore conversations with industry experts and practitioners sharing their experiences, insights, and advice on succeeding in Machine Learning and Data Science.
 
