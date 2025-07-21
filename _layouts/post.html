@@ -39,6 +39,7 @@ layout: default
   <div style="text-align: center; margin: 2rem 0;">
     <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
       <a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&itscg=30200&ls=1" 
+         target="_blank"
          style="display: inline-block; text-decoration: none;">
         <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&releaseDate=1673288700" 
              alt="Listen on Apple Podcasts" 
@@ -46,8 +47,14 @@ layout: default
       </a>
       
       <a href="https://open.spotify.com/show/2w787MHWhbcJMgZ6k1e5v8" 
-         style="display: inline-block; text-decoration: none; background: #1DB954; padding: 1rem 1.5rem; border-radius: 13px; color: white; font-weight: 600; font-size: 1rem; align-items: center; min-width: 218px; height: 51px; text-align: center; line-height: 51px;">
-        🎵 Listen on Spotify
+         target="_blank"
+         style="display: inline-block; text-decoration: none;">
+        <div style="background: #1DB954; color: white; padding: 12px 20px; border-radius: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 600; height: 83px; width: 250px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #1DB954;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="margin-right: 8px;">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.48.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.32 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+          Listen on Spotify
+        </div>
       </a>
     </div>
   </div>
@@ -55,8 +62,14 @@ layout: default
   {%- if page.substack_url -%}
   <div style="text-align: center; margin: 1rem 0;">
     <a href="{{ page.substack_url }}" 
-       style="display: inline-block; padding: 0.75rem 1.5rem; background: #ff6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">
-      📝 Read more on Substack
+       target="_blank"
+       style="display: inline-block; text-decoration: none;">
+      <div style="background: #ff6719; color: white; padding: 12px 20px; border-radius: 13px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 600; height: 83px; width: 250px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid #ff6719; transition: all 0.2s ease;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="margin-right: 8px;">
+          <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+        </svg>
+        Read more on Substack
+      </div>
     </a>
   </div>
   {%- endif -%}
