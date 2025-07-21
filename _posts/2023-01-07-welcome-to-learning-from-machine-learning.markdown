@@ -15,4 +15,18 @@ Whether you are a student just starting out, a researcher looking to make the ju
 
 I hope you will join me on this journey of continuous learning and professional development.
 
-Follow Learning from Machine Learning on LinkedIn 
+## 🎧 **Listen & Subscribe:**
+
+- **[🍎 Apple Podcasts](https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230)** - Subscribe and leave a review!
+- **[🎙️ RSS Feed](https://media.rss.com/learning-from-machine-learning/feed.xml)** - For your favorite podcast app
+- **[📺 YouTube Channel](https://www.youtube.com/@learningfrommachinelearning)** - Watch full episodes and subscribe
+
+## 📝 **Stay Connected:**
+
+- **[📰 Substack Newsletter](https://mindfulmachines.substack.com)** - Additional insights and updates
+- **[💼 LinkedIn](https://www.linkedin.com/in/sethplevine)** - Connect with me professionally  
+- **[🐦 Twitter](https://twitter.com/nlp_nerd)** - Follow for ML discussions and updates
+
+---
+
+**Ready to start learning?** Check out our [first episode with Maarten Grootendorst]({{ site.baseurl }}/2023/01/09/episode-one.html) about BERTopic and the psychology of data science! 

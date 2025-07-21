@@ -10,12 +10,10 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    {%- assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" -%}
-    
-    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">Episodes</h2>
+    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">Posts</h2>
     
     <div style="display: grid; gap: 1rem; margin-bottom: 2rem;">
-      {%- for post in episode_posts -%}
+      {%- for post in site.posts -%}
       <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1rem; background: #f8f9fa; transition: box-shadow 0.2s;">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         
