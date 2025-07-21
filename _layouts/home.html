@@ -10,12 +10,12 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    {%- assign recent_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" | limit: 5 -%}
+    {%- assign episode_posts = site.posts | where_exp: "post", "post.title != 'Welcome to Learning from Machine Learning!'" -%}
     
-    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">Recent Episodes</h2>
+    <h2 style="font-size: 1.5rem; margin: 2rem 0 1rem 0; color: #424242;">All Episodes</h2>
     
     <div style="display: grid; gap: 1rem; margin-bottom: 2rem;">
-      {%- for post in recent_posts -%}
+      {%- for post in episode_posts -%}
       <div style="border: 1px solid #e1e4e8; border-radius: 6px; padding: 1rem; background: #f8f9fa; transition: box-shadow 0.2s;">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         
@@ -46,12 +46,7 @@ layout: default
       {%- endfor -%}
     </div>
 
-    <div style="text-align: center; margin: 2rem 0;">
-      <a href="{{ '/episodes/' | relative_url }}" 
-         style="display: inline-block; padding: 0.75rem 1.5rem; background: #0366d6; color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">
-        View All Episodes →
-      </a>
-    </div>
+
 
   {%- endif -%}
 
