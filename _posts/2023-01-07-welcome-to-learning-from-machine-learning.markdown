@@ -29,4 +29,4 @@ I hope you will join me on this journey of continuous learning and professional 
 
 ---
 
-**Ready to start learning?** Check out our [first episode with Maarten Grootendorst]({{ site.baseurl }}/2023/01/09/episode-one.html) about BERTopic and the psychology of data science! 
+**Ready to start learning?** Check out the [first episode with Maarten Grootendorst]({% post_url 2023-01-09-episode-one %}) about BERTopic and the psychology of data science!
