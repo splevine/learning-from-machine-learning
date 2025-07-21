@@ -15,15 +15,16 @@ layout: home
   </p>
 </div>
 
+<!-- Load both social platform scripts -->
 <script src="https://apis.google.com/js/platform.js"></script>
+<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
 
-<div style="text-align: center; margin-bottom: 2rem;">
+<!-- Social buttons row -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap;">
   <div class="g-ytsubscribe" data-channelid="UCGwSWuvSRzop4ZVG2z9NmnQ" data-layout="full" data-count="hidden"></div>
+  <script type="IN/FollowCompany" data-id="91707568"></script>
 </div>
 
 <div style="text-align: center; margin-bottom: 2rem;">
   <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 </div>
-
-<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-<script type="IN/FollowCompany" data-id="91707568"></script>
