@@ -21,7 +21,10 @@ class EpisodeUpdater:
     def load_existing_episodes(self):
         """Load existing episode posts to avoid duplicates"""
         existing = set()
-        posts_dir = '_posts'
+        # Handle both running from scripts/ directory and from root
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        repo_root = os.path.dirname(script_dir)
+        posts_dir = os.path.join(repo_root, '_posts')
         if os.path.exists(posts_dir):
             for filename in os.listdir(posts_dir):
                 if filename.endswith('.markdown') and 'episode' in filename.lower():
@@ -228,9 +231,13 @@ class EpisodeUpdater:
         full_content = "---\n" + yaml.dump(front_matter, default_flow_style=False) + "---\n"
         full_content += "\n".join(content_parts)
         
-        # Create posts in the main _posts directory, not scripts/_posts
-        filepath = os.path.join('..', '_posts', filename)
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        # Create posts in the main _posts directory
+        # Handle both running from scripts/ directory and from root
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        repo_root = os.path.dirname(script_dir)
+        posts_dir = os.path.join(repo_root, '_posts')
+        filepath = os.path.join(posts_dir, filename)
+        os.makedirs(posts_dir, exist_ok=True)
         
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(full_content)

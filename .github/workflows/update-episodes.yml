@@ -1,0 +1,79 @@
+name: Update Episodes
+
+on:
+  # Run daily at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual trigger from Actions tab
+  workflow_dispatch:
+  
+  # Run when new content is pushed to main
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+
+jobs:
+  update-episodes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests feedparser python-dateutil pyyaml
+      
+      - name: Run episode updater
+        env:
+          YOUTUBE_CHANNEL_ID: ${{ secrets.YOUTUBE_CHANNEL_ID }}
+          PODCAST_RSS_URL: ${{ secrets.PODCAST_RSS_URL }}
+          SUBSTACK_RSS_URL: ${{ secrets.SUBSTACK_RSS_URL }}
+        run: |
+          python scripts/update_episodes_no_api.py
+      
+      - name: Check for new episodes
+        id: check_changes
+        run: |
+          echo "Git status:"
+          git status --porcelain
+          if [[ -n $(git status --porcelain _posts/) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "✅ New episodes found!"
+            # Count new files
+            NEW_COUNT=$(git status --porcelain _posts/ | grep "^??" | wc -l)
+            echo "new_count=$NEW_COUNT" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "📭 No new episodes"
+          fi
+      
+      - name: Commit and push new episodes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add _posts/
+          NEW_FILES=$(git diff --cached --name-only _posts/)
+          echo "📝 New episode files:"
+          echo "$NEW_FILES"
+          git commit -m "Add new episode(s)
+
+Automated episode import from YouTube RSS feed
+          
+Files added:
+$NEW_FILES"
+          git push
+
