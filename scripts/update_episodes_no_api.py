@@ -27,13 +27,21 @@ class EpisodeUpdater:
         posts_dir = os.path.join(repo_root, '_posts')
         if os.path.exists(posts_dir):
             for filename in os.listdir(posts_dir):
-                if filename.endswith('.markdown') and 'episode' in filename.lower():
-                    with open(os.path.join(posts_dir, filename), 'r', encoding='utf-8') as f:
-                        content = f.read()
-                        # Extract YouTube ID from existing posts
-                        youtube_match = re.search(r'youtubeID:\s*([a-zA-Z0-9_-]+)', content)
-                        if youtube_match:
-                            existing.add(youtube_match.group(1))
+                if filename.endswith('.markdown'):
+                    filepath = os.path.join(posts_dir, filename)
+                    try:
+                        with open(filepath, 'r', encoding='utf-8') as f:
+                            content = f.read()
+                            # Extract YouTube ID from existing posts
+                            youtube_match = re.search(r'youtubeID:\s*([a-zA-Z0-9_-]+)', content)
+                            if youtube_match:
+                                video_id = youtube_match.group(1)
+                                existing.add(video_id)
+                                print(f"Found existing episode with YouTube ID: {video_id} in {filename}")
+                    except Exception as e:
+                        print(f"Error reading {filename}: {e}")
+        
+        print(f"Total existing episodes found: {len(existing)}")
         return existing
     
     def fetch_youtube_videos_rss(self):
@@ -58,9 +66,14 @@ class EpisodeUpdater:
                 # Extract video ID from link
                 video_id = entry.link.split('v=')[-1] if 'v=' in entry.link else None
                 
-                if not video_id or video_id in self.existing_episodes:
+                if not video_id:
+                    continue
+                    
+                if video_id in self.existing_episodes:
+                    print(f"Skipping existing episode: {entry.title} (ID: {video_id})")
                     continue
                 
+                print(f"Found new episode: {entry.title} (ID: {video_id})")
                 videos.append({
                     'id': video_id,
                     'title': entry.title,
@@ -191,6 +204,10 @@ class EpisodeUpdater:
             'categories': 'machine learning updates',
             'youtubeID': youtube['id']
         }
+        
+        # Add Substack URL if available
+        if substack and substack.get('link'):
+            front_matter['substack_url'] = substack['link']
         
         # Create post content
         content_parts = []
