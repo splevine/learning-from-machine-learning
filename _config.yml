@@ -31,6 +31,9 @@ youtube_username: "@learningfrommachinelearning"
 # rss: "https://rss.com/podcasts/learning-from-machine-learning/"
 substack_username: mindfulmachines
 
+# Analytics
+goatcounter_code: "lfml"
+
 minima:
   show_excerpts: true
   date_format: "%B %-d, %Y"
