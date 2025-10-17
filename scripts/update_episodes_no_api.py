@@ -195,37 +195,23 @@ class EpisodeUpdater:
         # Create post content
         content_parts = []
         
-        # YouTube section
-        youtube_url = f"https://www.youtube.com/watch?v={youtube['id']}"
-        content_parts.append(f"Watch on [YouTube]({youtube_url}):")
-        content_parts.append(f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{youtube["id"]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
-        content_parts.append("")
-        
-        # Episode description
-        description = youtube.get('description', '').split('\n')[0:3]  # First few lines
+        # Episode description from YouTube
+        description = youtube.get('description', '')
         if description:
-            content_parts.extend(description)
-            content_parts.append("")
+            # Get first few paragraphs, clean up
+            paragraphs = description.split('\n\n')[:3]  # First 3 paragraphs
+            for para in paragraphs:
+                para = para.strip()
+                if para and not para.startswith('http') and not para.startswith('---'):
+                    content_parts.append(para)
+                    content_parts.append("")
         
         # Add podcast description if available and different
         if podcast and podcast.get('description'):
-            podcast_desc = podcast['description'][:500]  # Limit length
+            podcast_desc = podcast['description'].strip()
             if podcast_desc and podcast_desc not in youtube.get('description', ''):
                 content_parts.append(podcast_desc)
                 content_parts.append("")
-        
-        # Apple Podcasts embed if we have the episode ID
-        if apple_podcast_id:
-            content_parts.append(f'<iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?i={apple_podcast_id}&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>')
-            content_parts.append("")
-        
-        # Apple Podcasts badge
-        content_parts.append('<a href="https://podcasts.apple.com/us/podcast/learning-from-machine-learning/id1663925230?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1673288700" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>')
-        
-        # Add Substack link if available
-        if substack and substack.get('link'):
-            content_parts.append("")
-            content_parts.append(f"Read more on [Substack]({substack['link']})")
         
         # Write the file
         full_content = "---\n" + yaml.dump(front_matter, default_flow_style=False) + "---\n"
